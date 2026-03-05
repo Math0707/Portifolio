@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  color-scheme: dark;
+}
+
+html, body{
+  height: 100%;
+  scroll-behavior: smooth;
+
+}
+
+body{
+  @apply bg-black text-white antialiased;
+}
+
+::selection{
+  background: rgba(255,255,255,.18);
+}
+
+a{
+  @apply underline-offset-4;
+}
+
+/* brutal-ish scrollbar */
+*{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,.25) transparent;
+}
+*::-webkit-scrollbar{ width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.18); border-radius: 999px; }
+*::-webkit-scrollbar-track{ background: transparent; }
+
+/* subtle grain overlay */
+.grain:before{
+  content: "";
+  position: fixed;
+  inset: -30%;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: .16;
+  transform: translateZ(0);
+  animation: grain 8s steps(10) infinite;
+}
