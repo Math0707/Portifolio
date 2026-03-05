@@ -23,3 +23,5 @@ Thumbs.db
 .vscode/           # Configurações do VS Code (opcional)
 .idea/             # Configurações do WebStorm/IntelliJ (opcional)
 *.local            # Outros arquivos de configuração local
+
+backup-repo.git/
