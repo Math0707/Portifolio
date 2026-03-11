@@ -16,5 +16,4 @@ npm run dev
   - Builds: `app/builds/page.tsx`
   - About: `app/about/page.tsx`
 
-## Currículo
-Substitua `public/Matheus-Teixeira-Francelino-CV.pdf` pelo seu PDF real mantendo o mesmo nome.
+
