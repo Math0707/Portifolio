@@ -10,6 +10,7 @@ import { projects } from "@/lib/data";
 import { ProjectCard } from "@/components/project-card";
 import { Marquee } from "@/components/marquee";
 import { Contact } from "@/components/contact";
+import LightPillar from "@/components/LightPillar";
 
 export default function HomePage() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -32,8 +33,10 @@ export default function HomePage() {
 
   return (
     <main id="top">
+      
       {/* Hero */}
       <div className="relative overflow-hidden">
+        <LightPillar />
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -top-40 left-1/2 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-white/10 blur-3xl" />
           <div className="absolute -bottom-64 right-0 h-[600px] w-[600px] rounded-full bg-white/5 blur-3xl" />
@@ -48,6 +51,7 @@ export default function HomePage() {
               <h1 data-hero className="mt-3 text-4xl md:text-6xl font-semibold leading-[1.05]">
                 Matheus Teixeira Francelino
               </h1>
+              
               <p data-hero className="mt-5 text-lg md:text-xl text-white/75 leading-relaxed">
                 Eu construo produtos e interfaces que <span className="text-white">funcionam</span>. Full Stack Java,
                 front-end moderno, e um pouco de automação/IA quando faz sentido. Sem enfeite inútil.

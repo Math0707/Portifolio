@@ -70,7 +70,7 @@ export const projects: Project[] = [
     tags: ["Java", "Spring Boot", "REST", "PostgreSQL", "React"],
     year: "2026",
     image: "/projects/project-1.svg",
-    links: [{ label: "GitHub", href: "https://github.com/" }],
+    links: [{ label: "GitHub", href: "https://github.com/Math0707/project-management-system" }],
   },
   {
     slug: "projeto-02",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Tailwind", "Framer Motion", "TypeScript"],
     year: "2026",
     image: "/projects/project-2.svg",
-    links: [{ label: "Demo", href: "#" }],
+    links: [{ label: "GitHub", href: "#" }],
   },
   {
     slug: "projeto-03",
@@ -92,6 +92,6 @@ export const projects: Project[] = [
     tags: ["REST API", "MongoDB", "Docker"],
     year: "2025",
     image: "/projects/project-3.svg",
-    links: [{ label: "GitHub", href: "https://github.com/" }],
+    links: [{ label: "GitHub", href: "https://github.com/Math0707/Dashboard" }],
   },
 ];
